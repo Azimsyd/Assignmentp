@@ -4,6 +4,7 @@ import Signup from "./components/Signup";
 import { Toaster } from "react-hot-toast";
 import { useAuth } from "./context/AuthProvider";
 import MultiStepForm from "./home/MultiStepForm";
+import Table from "./table/Table";
 
 function App() {
   const [authUser, setAuthUser] = useAuth();
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MultiStepForm />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/table" element={<Table />}/>
         </Routes>
         <Toaster />
     </>

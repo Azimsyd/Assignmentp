@@ -41,6 +41,9 @@ function Navbar() {
       <li>
         <a href="/">Home</a>
       </li>
+      <li>
+        <a href="/table">Table</a>
+      </li>
     </>
   );
   return (
